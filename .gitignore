@@ -1,0 +1,6 @@
+build_tmp/
+__pycache__/
+media/video/
+media/audio/*.mp3
+media/audio/*.ogg
+media/audio/*.wav
