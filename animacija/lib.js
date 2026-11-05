@@ -202,6 +202,11 @@ class Figure {
       h.insertBefore(m, h.firstChild);
     } else if (hair === "short") {
       el("path", { d: "M-30 -6 Q-30 -34 0 -35 Q30 -34 30 -6 Q18 -24 0 -22 Q-18 -24 -30 -6 Z", fill: this.o.hairColor || "#4a3020" }, h);
+    } else if (hair === "wig") {   // c. 1700 curled periwig, falling past the shoulders
+      const curls = el("g", {}, h);
+      for (const [x, y] of [[-30, -22], [-36, 0], [-36, 22], [-32, 44], [-24, 62], [30, -22], [36, 0], [36, 22], [32, 44], [-14, -34], [6, -36], [24, -32]])
+        el("circle", { cx: x, cy: y, r: 15, fill: this.o.hairColor || "#e8e2d6", stroke: INK, "stroke-width": 3.5 }, curls);
+      h.insertBefore(curls, h.firstChild);
     }
     if (c === "robot") this.buildHelmet(this.o.helmet || "silver");
   }

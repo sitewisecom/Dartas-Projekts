@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 
 const FPS = 30;
-const PAGE = "file://" + path.join(__dirname, "index.html");
+const PAGE = "file://" + path.join(__dirname, process.env.PAGE || "index.html");
 
 async function openPage(browser) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
