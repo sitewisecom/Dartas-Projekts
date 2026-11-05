@@ -4,3 +4,5 @@ media/video/
 media/audio/*.mp3
 media/audio/*.ogg
 media/audio/*.wav
+animacija/node_modules/
+output/chunks/

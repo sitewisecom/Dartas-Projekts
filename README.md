@@ -5,6 +5,10 @@ noslēgumā — karaoke un „Paldies par uzmanību!”.
 
 | Fails | Kas tas ir |
 |---|---|
+| `output/Muzikas_attistiba_animacija.mp4` | **Jaunais** 5 min stickman animācijas video bez skaņas (Gvido no Areco, Bēthovens, Daft Punk, „Bohemian Rhapsody”) |
+| `teksts/animacija_stastijums.md` | **Sakāmais teksts animācijai** ar laika kodiem |
+| `reports/Gvido Bēthovens un Daft Punk.md` | Faktu pārbaude animācijas tēmām |
+| `animacija/` | Animācijas avotkods (SVG + GSAP, renderē `node animacija/render.js video out.mp4`) |
 | `output/Muzikas_attistiba_video.mp4` | Gatavais video (~9:45, 1080p, 30 kadri/s) ar klusu fona mūziku — imports CapCut |
 | `output/fona_muzika_atseviski.m4a` | Tā pati fona mūzika atsevišķi (ja gribi to regulēt CapCut atsevišķi) |
 | `teksts/voiceover_teksts.md` | **Sakāmais teksts** katram kadram ar laika kodiem |
